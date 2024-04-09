@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Lato", sans-serif;
+}
+
+body {
+   background-color: #090e22;
+   color: white;
+   height: 100vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.hide {
+   display: none !important;
+}
+
+.container {
+   background-color: #1d1e33;
+   padding: 20px;
+   border-radius: 10px;
+   width: 90%;
+   max-width: 400px;
+   min-height: 200px;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.container h1 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+}
+
+.form label {
+   font-weight: 600;
+   margin-bottom: 10px;
+   color: #ccc;
+}
+
+.form input {
+   margin-bottom: 20px;
+   padding: 10px;
+   font-size: 1.1rem;
+   border: none;
+   border-radius: 5px;
+}
+
+.form input:focus {
+   outline: none;
+}
+
+.buttons {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+
+   margin-top: 10px;
+}
+
+button {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   font-weight: bolder;
+   font-size: 1rem;
+   cursor: pointer;
+   background-color: crimson;
+   color: white;
+
+   transition: .25s;
+}
+
+button:hover {
+   filter: brightness(.75);
+}
+
+#clear-btn {
+   background-color: #777;
+   width: 60%;
+}
+
+#result-container {
+   text-align: center;
+
+   display: flex;
+   flex-direction: column;
+}
+
+#imc-number {
+   font-size: 2.4rem;
+   margin-bottom: .6rem;
+}
+
+#imc-info {
+   font-size: 1.4rem;
+   color: #ccc;
+}
+
+#result-container h3 {
+   margin-top: 1rem;
+   color: #ddd;
+}
+
+#imc-table {
+   margin: 1.5rem 0;
+   font-size: .8rem;
+}
+
+.table-header {
+   font-weight: bold;
+   color: #ccc;
+}
+
+.table-header, .table-data {
+   display: flex;
+   justify-content: space-between;
+   
+   margin-bottom: .5rem;
+   padding-bottom: .5rem;
+   border-bottom: 1px solid rgba(85, 85, 85, 0.781);
+}
+
+.table-header h4, .table-data p {
+   flex: 1;
+}
+
+.table-header h4:last-child, .table-data p:last-child {
+   max-width: 70px;
+}
+
+#back-btn {
+   max-width: 200px;
+   align-self: center;
+}
+
+.low {
+   color: #dbce12;
+}
+
+.medium {
+   color: #db6212;
+}
+
+.high {
+   color: #db1912;
+}
+
+.good {
+   color: #12db34;
+}
